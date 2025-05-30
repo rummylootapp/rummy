@@ -14,8 +14,11 @@
         }
         
         body {
-            background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
-            color: white;
+            background: #ffcd00; /* New golden yellow background */
+            color: #333; /* Dark text for better contrast */
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
         }
         
         header {
@@ -35,12 +38,14 @@
         .hero {
             text-align: center;
             padding: 100px 20px;
+            flex: 1;
         }
         
         .hero h1 {
             font-size: 48px;
             margin-bottom: 20px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            color: #000; /* Black for better visibility */
         }
         
         .hero p {
@@ -49,12 +54,14 @@
             max-width: 700px;
             margin-left: auto;
             margin-right: auto;
+            color: #222; /* Dark gray for better readability */
         }
         
         .buttons {
             display: flex;
             justify-content: center;
             gap: 20px;
+            flex-wrap: wrap;
         }
         
         .btn {
@@ -91,9 +98,10 @@
         
         footer {
             text-align: center;
-            padding: 20px;
-            background: rgba(0, 0, 0, 0.7);
-            margin-top: 50px;
+            padding: 15px;
+            background: rgba(0, 0, 0, 0.85);
+            color: white;
+            width: 100%;
         }
     </style>
 </head>
@@ -101,9 +109,7 @@
     <header>
         <div class="logo">RummyLoot</div>
         <nav>
-            <a href="#" style="color: white; text-decoration: none; margin-left: 20px;">Home</a>
-            <a href="#" style="color: white; text-decoration: none; margin-left: 20px;">About</a>
-            <a href="#" style="color: white; text-decoration: none; margin-left: 20px;">How to Play</a>
+            <!-- Navigation links removed as requested -->
         </nav>
     </header>
     
